@@ -13,14 +13,13 @@ dependencies = [
 VERSION = "0.3.4.3"
 
 setup(
-    name='pymatch',
+    name='pymatch_fake',
     packages=['pymatch'],
     version=VERSION,
     description='Matching techniques for Observational Studies',
     author='Ben Miroglio',
-    author_email='benmiroglio@gmail.com',
-    url='https://github.com/benmiroglio/pymatch',
-    download_url='https://github.com/benmiroglio/pymatch/archive/{}.tar.gz'.format(VERSION),
+    url='https://github.com/Luzhehan/111',
+    download_url='https://github.com/Luzhehan/111/archive/{}.tar.gz'.format(VERSION),
     keywords=['logistic', 'regression', 'matching', 'observational', 'study', 'causal', 'inference'],
     include_package_data=True,
     install_requires=dependencies
