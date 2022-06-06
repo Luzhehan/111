@@ -22,7 +22,7 @@ class Matcher:
         Useful for unique idenifiers
     """
 
-def __init__(self, test, control, yvar, formula=None, exclude=[]):
+    def __init__(self, test, control, yvar, formula=None, exclude=[]):
         self.control_color = "#1F77B4"
         self.test_color = "#FF7F0E"
 
