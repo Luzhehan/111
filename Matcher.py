@@ -75,7 +75,6 @@ def __init__(self, test, control, yvar, formula=None, exclude=[]):
         print('Formula:\n{}'.format(self.formula))
         print('n majority:', len(self.data[self.data[yvar] == self.majority]))
         print('n minority:', len(self.data[self.data[yvar] == self.minority]))
-
     def fit_scores(self, balance=True, nmodels=None):
         """
         Fits logistic regression model(s) used for
@@ -137,7 +136,6 @@ def __init__(self, test, control, yvar, formula=None, exclude=[]):
             self.model_accuracy.append(self._scores_to_accuracy(res, self.X, self.y))
             self.models.append(res)
             print("\nAccuracy", round(np.mean(self.model_accuracy[0]) * 100, 2))
-
 
     def predict_scores(self):
         """
