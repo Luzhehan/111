@@ -189,7 +189,7 @@ class Matcher:
         ctrl_scores = self.data[self.data[self.yvar]==False][['scores']]
         result, match_ids = [], []
         for i in range(len(test_scores)):
-            # uf.progress(i+1, len(test_scores), 'Matching Control to Test...')
+            uf.progress(i+1, len(test_scores), 'Matching Control to Test...')
             match_id = i
             score = test_scores.iloc[i]
             if method == 'random':
